@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кузнецова Оксана](https://up.htmlacademy.ru/htmlcss/32/user/1873103).
-* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
+* Наставник: [Arthur ❤️ Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
