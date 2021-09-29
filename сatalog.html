@@ -21,7 +21,9 @@
             <a class="navigation-link" href="gostinica.html">Гостиницы</a>
           </li>
         </ul>
-        <img class="logo" src="#" alt="логотип" />
+        <a href="index.html">
+          <img class="logo" src="#" alt="логотип" />
+        </a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -172,7 +174,7 @@
             </li>
             <li class="button-item">
               <a href="#" class="button">
-                <span class="visually-hidden">Не пойму, что значит иконка</span>
+                <span class="visually-hidden">Крупная карточка</span>
               </a>
             </li>
             <li class="button-item">
@@ -183,6 +185,7 @@
           </ul>
         </header>
         <article class="catalog-product-section">
+          <h3 class="visually-hidden">Каталог гостиниц</h3>
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="product-card">
@@ -193,19 +196,18 @@
                       src="#"
                       alt="Фото Amara Resort"
                     />
-                    <h3 class="product-card-title">Amara Resort & Spa</h3>
                   </a>
+                  <a class="product-card-title" href="product.html"
+                    >Amara Resort & Spa</a
+                  >
                   <p class="product-card-price">Гостиница от 4000 ₽</p>
                   <a href="#" class="product-card-button detailed">Подробнее</a>
                   <a href="#" class="product-card-button favourites"
-                    >Избранное</a>
+                    >Избранное</a
+                  >
                 </div>
                 <div class="rating-product">
-                  <img
-                    class="rating-card-image"
-                    src="#"
-                    alt="Фото  рейтинги Amara Resort"
-                  />
+                  <img class="rating-card-image" src="#" alt="4 звезды" />
                   <p>Рейтинг: 8,5</p>
                 </div>
               </div>
@@ -219,17 +221,15 @@
                       src="#"
                       alt="Desert Quail Inn"
                     />
-                    <h3 class="product-card-title">Desert Quail Inn</h3>
                   </a>
+                  <a class="product-card-title" href="product.html"
+                    >Desert Quail Inn</a
+                  >
                   <p class="product-card-price">Мотель от 3000 ₽</p>
                   <a href="#" class="product-card-button detailed">Подробнее</a>
                 </div>
                 <div class="rating-product">
-                  <img
-                    class="rating-card-image"
-                    src="#"
-                    alt="Фото  рейтинги Desert Quail Inn"
-                  />
+                  <img class="rating-card-image" src="#" alt="3 звезды" />
                   <p>Рейтинг: 8,9</p>
                 </div>
               </div>
@@ -243,8 +243,10 @@
                       src="#"
                       alt="Villas at Poco Diablo"
                     />
-                    <h3 class="product-card-title">Villas at Poco Diablo</h3>
                   </a>
+                  <a class="product-card-title" href="product.html"
+                    >Villas at Poco Diablo</a
+                  >
                   <p class="product-card-price">Апартаменты от 2000 ₽</p>
                   <a href="#" class="product-card-button detailed">Подробнее</a>
                   <a href="#" class="product-card-button favourites"
@@ -252,11 +254,7 @@
                   >
                 </div>
                 <div class="rating-product">
-                  <img
-                    class="rating-card-image"
-                    src="#"
-                    alt="Фото  рейтинги Villas at Poco Diablo"
-                  />
+                  <img class="rating-card-image" src="#" alt="2 звезды" />
                   <p>Рейтинг: 9,2</p>
                 </div>
               </div>
@@ -270,8 +268,10 @@
                       src="#"
                       alt="GreenTree Inn"
                     />
-                    <h3 class="product-card-title">Villas at GreenTree Inn</h3>
                   </a>
+                  <a class="product-card-title" href="product.html"
+                    >Villas at GreenTree Inn</a
+                  >
                   <p class="product-card-price">Гостиница от 3000 ₽</p>
                   <a href="#" class="product-card-button detailed">Подробнее</a>
                   <a href="#" class="product-card-button favourites"
@@ -279,11 +279,7 @@
                   >
                 </div>
                 <div class="rating-product">
-                  <img
-                    class="rating-card-image"
-                    src="#"
-                    alt="Фото  рейтинги GreenTree Inn"
-                  />
+                  <img class="rating-card-image" src="#" alt="2 звезды" />
                   <p>Рейтинг: 9,2</p>
                 </div>
               </div>
@@ -311,7 +307,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
+              <a class="pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#">
@@ -319,13 +315,14 @@
               </a>
             </li>
           </ul>
-          <!--Вот тут нужна помощь, не совсем поняла как реализовать-->
-          <label class="show">Гостиниц на странице</label>
-          <select class="show-list">
-            <option class="show-item">4</option>
-            <option class="show-item">8</option>
-            <option class="show-item">16</option>
-          </select>
+          <label class="show"
+            >Гостиниц на странице
+            <select class="show-list">
+              <option class="show-item">4</option>
+              <option class="show-item">8</option>
+              <option class="show-item">16</option>
+            </select>
+          </label>
         </footer>
       </section>
       <section class="form-inner">
@@ -356,7 +353,11 @@
         <li class="link-item"><a href="#">YouTube</a></li>
       </ul>
       <a class="tell" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <img src="#" alt="лого академии" class="foot-logo" />
+      <img
+        src=" https://htmlacademy.ru/"
+        alt="лого академии"
+        class="foot-logo"
+      />
     </footer>
   </body>
 </html>
