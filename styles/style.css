@@ -242,6 +242,7 @@ text-align: center
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 .form-text-inner {
   font-size: 22px;
