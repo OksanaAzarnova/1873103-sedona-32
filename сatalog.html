@@ -9,17 +9,18 @@
   </head>
   <body class="inner">
     <header class="page-header">
-      <h1><span class="visually-hidden">Седона</span></h1>
+      <div class="header-container">
+      <h1 class="visually-hidden">Седона</h1>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-text" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О нас</a>
+            <a class="navigation-link navigation-text" href="about.html">О нас</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="gostinica.html">Гостиницы</a>
+            <a class="navigation-link navigation-text" href="gostinica.html">Гостиницы</a>
           </li>
         </ul>
         <a href="index.html">
@@ -30,7 +31,7 @@
           />
         </a>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          <li class="navigation-item icon-item">
             <a class="navigation-link" href="#">
             <img  class="header-icon"
                   src="img/svg-icon/search.svg"
@@ -41,7 +42,7 @@
               <span class="visually-hidden"> Поиск </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item icon-item ">
             <a class="navigation-link" href="#">
             <img  class="header-icon"
                   src="img/svg-icon/like.svg"
@@ -52,18 +53,23 @@
               <span class="visually-hidden"> Избранное </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link-header" href="#">
-              <span class="visually-hidden"> Хочу сюда!</span>
+          <li class="navigation-item icon-item">
+            <a class="button link-header" href="#">
+              Хочу сюда!
             </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
+      <div class="catalog-header">
+
       <h2 class="visually-hidden">Список гостиниц Седоны</h2>
+
       <section class="catalog-products">
+
       <header class="inner-header">
+      <div class="header-title-box">
         <h3 class="inner-header-title">Гостинницы Седоны</h3>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -75,7 +81,10 @@
             </a>
           </li>
         </ul>
+        </div>
       </header>
+        <div class="conrol-form">
+          <div>
         <form
           class="catalog-filter"
           action="https://echo.htmlacademy.ru/"
@@ -110,7 +119,9 @@
               <span class="control-mark"></span>
               <span class="control-label">Wi-fi</span>
             </label>
-          </fieldset>
+            </fieldset>
+          </div>
+          <div>
           <fieldset class="housing-filter-group">
             <legend class="filter-title">Тип жилья</legend>
             <label class="control">
@@ -141,6 +152,8 @@
               <span class="control-label">Апартаменты</span>
             </label>
           </fieldset>
+          </div>
+          <div>
           <fieldset class="catalog-filter-group">
             <legend class="filter-title">Стоимость, ₽:</legend>
             <button class="range-toggle toggle-min" type="button">
@@ -169,10 +182,12 @@
             </label>
           </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button formbut" type="submit">Применить</button>
+          <button class="button formbut" type="submit">Сбросить</button>
         </form>
+      </div>
       </section>
+      </div>
       <section class="">
         <header class="sorting">
           <h2 class="sorting-title">Найдено страниц:38</h2>
@@ -221,6 +236,8 @@
             </li>
           </ul>
         </header>
+      </div>
+
         <article class="catalog-product-section">
           <h3 class="visually-hidden">Каталог гостиниц</h3>
           <ul class="catalog-list">
@@ -241,8 +258,8 @@
                         Amara Resort &amp; Spa.
                   </a>
                   <p class="product-card-price">Гостиница от 4000 ₽</p>
-                  <a href="#" class="card-button-detailed">Подробнее</a>
-                  <a href="#" class="card-button-favourites"
+                  <a href="#" class="button button-detailed">Подробнее</a>
+                  <a href="#" class="button button-favourites"
                     >Избранное</a>
                 </div>
                 <div class="rating-product">
@@ -270,8 +287,8 @@
                   <a class="product-card-title" href="product.html"
                     >Desert Quail Inn</a>
                   <p class="product-card-price">Мотель от 3000 ₽</p>
-                  <a href="#" class="card-button-detailed">Подробнее</a>
-                  <a href="#" class="card-button-favourites">Избранное</a>
+                  <a href="#" class="button button-detailed">Подробнее</a>
+                  <a href="#" class="button button-favourites">Избранное</a>
                 </div>
                 <div class="rating-product">
                   <img  class="rating-card-image"
@@ -300,8 +317,8 @@
                     >Villas at Poco Diablo</a
                   >
                   <p class="product-card-price">Апартаменты от 2000 ₽</p>
-                  <a href="#" class="card-button-detailed ">Подробнее</a>
-                  <a href="#" class="card-button-favourites"
+                  <a href="#" class="button button-detailed ">Подробнее</a>
+                  <a href="#" class="button button-favourites"
                     >Избранном</a
                   >
                 </div>
@@ -331,8 +348,8 @@
                     >Villas at GreenTree Inn</a
                   >
                   <p class="product-card-price">Гостиница от 3000 ₽</p>
-                  <a href="#" class="card-button-detailed">Подробнее</a>
-                  <a href="#" class="card-button-favourites"
+                  <a href="#" class=" button button-detailed">Подробнее</a>
+                  <a href="#" class="button button-favourites"
                     >Избранное</a
                   >
                 </div>
@@ -348,32 +365,32 @@
               </div>
             </li>
           </ul>
-          <a href="#" class="button">Загрузить еще</a>
+          <a href="#" class="button load">Загрузить еще</a>
         </article>
         <footer>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
+              <a class="button pagination-prev pagination-disabled">
                 <span class="visually-hidden">Предыдущая страница</span>
               </a>
             </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+            <li class=" pagination-item">
+              <a class="button pagination-link">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class=" button pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class=" button pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="button pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class=" button pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
+              <a class=" button pagination-link pagination-next" href="#">
                 <span class="visually-hidden">Следующая страница</span>
               </a>
             </li>
@@ -405,7 +422,7 @@
             id="appointment-mail"
             placeholder="Ваш e-mail"
           />
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button load" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
