@@ -137,6 +137,7 @@ body {
 .advantages-list {
   width: 1200px;
   margin: 0 auto;
+  padding: 0px;
 }
 .advantages-item-white {
   background-color: #83b3d3;
@@ -342,7 +343,7 @@ foot-logo {
 }
 .conrol-form{
   display:flex;
-  
+
   padding-bottom: 200px;
 }
 .catalog-products {
