@@ -16,6 +16,17 @@
   font-display: swap;
 }
 /*general*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 html {
   height: 100%;
 }
