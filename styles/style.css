@@ -15,10 +15,20 @@
     url("../fonts/ptsans-700.woff") format("woff");
   font-display: swap;
 }
-/*general*/
+/*Общее*/
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+
+}
+
 html {
   height: 100%;
 }
+
 body {
   margin: 0;
   display: flex;
@@ -45,46 +55,57 @@ body {
 }
 .visually-hidden {
   visibility: hidden;
-  display: none;
-  margin: 0px;
-  padding: 0px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
-.box-сonteiner{
-  display: flex;
+
+
+.page-container{
   width: 1200px;
   margin: 0 auto;
-  align-content: center;
+  padding:0px;
 }
-/*header*/
-
-.navigation {
-  margin: 0px;
-  align-content: center;
-  display: flex;
-  width: 1057px;
-  margin: 0 auto;
+.link-list{
+text-decoration: none;
+list-style-type: none;
 }
-.navigation-list {
+.link{
+  text-decoration: none;
   list-style-type: none;
+
+}
+/*Общее конец*/
+
+/*Шапка стили*/
+.page-header{
+  margin: 0px;
+  padding:0px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 72px;
+}
+.navigation-list{
+  gap: 33px;
+  align-items: center;
   display: flex;
   width: 412px;
-  margin-right: auto;
+  margin: 0px;
+  padding: 0px;
 }
 .logo-pic {
   width: 138px;
   align-content: center;
 }
 .navigation-user {
-  list-style-type: none;
-  display: flex;
-  width: 300px;
-  margin-left: 120px;
+	justify-content: flex-end;
+	gap: 0;
 }
-
-.navigation-text {
-  margin-right: 33px;
-}
-
 .navigation-link {
   color: #000000;
   font-weight: bold;
@@ -97,28 +118,47 @@ body {
   font-size: 16px;
   line-height: 21px;
 }
-
-.icon-item{
-  margin: 21px;
+.navigation-item{
+  text-align: center;
+  max-width: 160px;
 }
-/*main block*/
+.button-link{
+  margin-left: 33px;
+}
+.icon-item{
+  margin-left: 21px;
+}
+/*Шапка стили конец!  не трогать!! */
+
+/*Главная страница /главный блок*/
+.box-сonteiner{
+  width: 100%;
+  display:flex;
+  margin: 0 auto;
+  padding: 0px;
+}
+.advantages-pic{
+  margin: 0px;
+  padding: 0px;
+}
 .main {
-  padding:0px;
   background-color: #4b4b4b;
   background-image: url("../img/jpg/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.image-vector {
+
+
+  }
+.content-box{
   text-align: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
+
 }
-.advantages-text {
-    width: auto;
-    margin-left: 240px;
-    margin-right: 240px;
-    margin-top: 63px;
-    margin-bottom: 79px;
+.text-box-main{
+    max-width: 720px;
+    margin: 63px auto 79px;
 }
 .header-text {
   font-weight: bold;
@@ -126,6 +166,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
 }
 .text-main {
   font-size: 22px;
@@ -133,35 +175,68 @@ body {
   text-align: center;
   }
 
-/*catalog block*/
-.advantages-list {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0px;
+/*Главная страница/каталог*/
+.advantage{
+  margin: 0px;
 }
-.advantages-item-white {
+
+.advantage-container{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.advantage-content{
+  height: 385px;
+  display:flex;
   background-color: #83b3d3;
-  width: 1200px;
-  margin: 0 auto;
-
-
 }
-.advantages-describe-list {
+.container-text{
+  width:400px;
+  margin-left: 90px;
+  margin-right: 90px;
+  padding-top: 98px;
+}
+
+.discribe-advantage{
+  display: flex;
   background-color: #ffffff;
   padding-left: 0;
 }
-.advantages-describe-item-rgb12 {
-
+.rgb12 {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding: 0px;
-  margin: 0 auto;
+}
 
-  }
-.advantages-describe-item-rgb120 {
+.rgb120 {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
+  padding: 0px;
 }
+}
+.catalog-text {
+  text-align: center;
+  margin-bottom: 79px;
+  margin-top: 23px;
+}
+.describe-item{
+  max-width:400px;
+
+}
+.pic-box{
+  text-align: center;
+  margin-top: 91px;
+  margin-bottom: 23px;
+  }
+  .text-box{
+  padding-left:75px;
+  padding-right:75px;
+  }
+
 .box-text{
   width: 250px;
   margin-top: 98px;
@@ -170,34 +245,16 @@ body {
   margin-right: auto;
 }
 
-.advat{
-width: 250px;
-margin:75px;
-margin-top:89px ;
-margin-bottom: 79px;
-}
-.reverse{
-  flex-direction: row-reverse;
-}
-.vector{
-text-align: center;
-}
 
 .advantages-box{
+  width: 1200;
   display: flex;
-  justify-content:space-between;
-  width: auto 0;
-  width: 1200px;
+
   height: 384px;
   }
 
 
-.container-text{
-  width:400px;
-  margin-left: auto;
-  margin-right: auto;
 
-}
 .advantages-describe-list{
   display: flex;
   list-style-type: none;
@@ -211,10 +268,9 @@ text-align: center;
   text-align: center;
   text-transform: uppercase;
 }
-.catalog-text {
-  text-align: center;
-}
-.catalog-title-white {
+
+
+.catalog-title {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
@@ -228,6 +284,19 @@ text-align: center;
   text-align: center;
   color: #ffffff;
 }
+.catalog-title{
+  margin-bottom:76px;
+}
+
+.catalog-title-white{
+  color:#ffffff;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+}
+
 /*form-block*/
 .form-container{
   width: 800px;
@@ -294,13 +363,7 @@ text-align: center;
   padding-bottom: 48px;
   padding-top: 42px;
 }
-.link-list {
-  justify-content: space-around;
-  display: flex;
-  margin-right: auto;
-  width: 107px;
-  list-style-type: none;
-}
+
 .tell {
   width: 720px;
   font-style: normal;
@@ -321,7 +384,7 @@ foot-logo {
 .catalog-header{
 
   margin: 0 auto;
-  width: 1200px;
+
   }
 
 /*catalog form*/
