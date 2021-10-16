@@ -1,42 +1,37 @@
 .page-container{
-  border-style:solid;
-  border-width: 1px;
-  border-color: blue;
+
+  outline: 5px solid blue;
 }
 
 .page-header{
 
-  border-style:solid;
-  border-width: 5px;
-  border-color: rgb(255, 0, 21);
+  outline: 5px solid rgb(223, 26, 12);
+
 }
 .header-container{
   margin:0px;
 }
 
 .main-cоntainer{
-  border-style:solid;
-  border-width: 5px;
-  border-color: rgb(15, 87, 12);
+
+  outline: 5px solid green;
 }
-.
+
 .box-сonteiner{
-  border-style:solid;
-  border-width: 5px;
-  border-color: rgb(0, 4, 255);
+
+  outline: 5px solid blue;
 }
  /*Навигация*/
  .navigation{
 
-   border-style:solid;
-   border-width: 4px;
-   border-color: rgb(212, 14, 230);
+
+   outline: 5px solid rgb(212, 14, 230);
  }
 .navigation-list{
 
-   border-style:solid;
-   border-width: 4px;
-   border-color: rgb(230, 226, 14);
+
+   outline: 5px solid rgb(230, 226, 14);
+
  }
  .navigation-item{
 
@@ -46,27 +41,24 @@
    border-color: rgb(6, 117, 24);
  }
 .link{
-   border-style:solid;
-   border-width: 3px;
-   border-color: rgb(206, 1, 1);
+
+ outline: 5px solid rgb(206, 1, 1);
 }
 /*главная страница/главный блок*/
 .box-сonteiner{
-   border-style:solid;
-   border-width: 3px;
-   border-color: rgb(206, 1, 1);
+
+  outline: 3px solid rgb(206, 1, 1);
 }
 
 .content-box{
-   border-style:solid;
-   border-width: 3px;
-   border-color: rgb(206, 1, 1);
+
+   outline: 5px solid rgb(206, 1, 1);
+
 }
 
 .text-box-main{
-  border-style:solid;
-  border-width: 3px;
-  border-color: rgb(206, 1, 1);
+
+    outline: 5px solid rgb(206, 1, 1);
 }
 .header-text{
    border-style:solid;
@@ -80,9 +72,10 @@
 }
 /*Главная страница/каталог*/
 .advantage{
-  border-style:solid;
-  border-width: 3px;
-  border-color: rgb(206, 1, 1);
+ outline: 3px solid red;
+}
+.box-text{
+  outline: 3px solid green;
 }
 .advantage-box{
 border-style:solid;
@@ -103,4 +96,17 @@ border-style:solid;
    border-style:solid;
    border-width: 4px;
    border-color: rgb(212, 14, 230);
+}
+/*Главная страница. Форма*/
+.search {
+  outline: 3px solid green;
+}
+*
+/*Подвал*/
+.foot-conteiner{
+  outline: 3px solid blue;
+
+}
+.link-list{
+  outline: 3px solid green;
 }
