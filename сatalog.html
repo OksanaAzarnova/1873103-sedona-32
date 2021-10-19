@@ -6,70 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона.Каталог</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/outline-settings.css" />
   </head>
   <body class="inner">
+  <div class= "page-container">
+    <!-- Шапка/ начало-->
     <header class="page-header">
-      <div class="header-container">
-      <h1 class="visually-hidden">Седона</h1>
+
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class=" link-list navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-text" href="index.html">Главная</a>
+            <a class=" link navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-text" href="about.html">О нас</a>
+            <a class=" link navigation-link navigation-text" href="about.html">О нас</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-text" href="gostinica.html">Гостиницы</a>
+            <a class=" link navigation-link navigation-text" href="сatalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a href="index.html">
-          <img  class="logo"
-                src="img/svg/logosedona.svg"
-                width="138" height="70"
-                alt="логотип"
+        <a class="logo-pic" href="index.html">
+          <img
+            class="logo"
+            src="img/svg/logosedona.svg"
+            width="138"
+            height="70"
+            alt="логотип"
           />
         </a>
-        <ul class="navigation-list navigation-user">
+        <ul class=" link-list navigation-list navigation-user">
           <li class="navigation-item icon-item">
-            <a class="navigation-link" href="#">
-            <img  class="header-icon"
-                  src="img/svg-icon/search.svg"
-                  alt="Поиск"
-                  width="18"
-                  height="18"
+            <a class=" link navigation-link icon-link" href="#">
+              <img
+                class="header-icon"
+                src="img/svg-icon/search.svg"
+                alt="Поиск"
+                width="18"
+                height="18"
               />
-              <span class="visually-hidden"> Поиск </span>
-            </a>
+              </a>
           </li>
-          <li class="navigation-item icon-item ">
-            <a class="navigation-link" href="#">
-            <img  class="header-icon"
-                  src="img/svg-icon/like.svg"
-                  alt="Поиск"
-                  width="18"
-                  height="17"
-            />
+          <li class="navigation-item icon-item">
+            <a class=" link navigation-link icon-link" href="#">
+              <img
+                class="header-icon"
+                src="img/svg-icon/like.svg"
+                alt="Поиск"
+                width="18"
+                height="17"
+              />
               <span class="visually-hidden"> Избранное </span>
             </a>
           </li>
-          <li class="navigation-item icon-item">
-            <a class="button link-header" href="#">
-              Хочу сюда!
+          <li class=" button-link navigation-item visually">
+            <a class="link button link-header" href="#">
+              <span class=" button"> Хочу сюда! </span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <div class="catalog-header">
+    <!--Шапка конец-->
+        <main class="main-inner">
+          <!--главная/ блок форма-->
+          <!--Шапка/форма-->
 
       <h2 class="visually-hidden">Список гостиниц Седоны</h2>
-
       <section class="catalog-products">
-
       <header class="inner-header">
-      <div class="header-title-box">
         <h3 class="inner-header-title">Гостинницы Седоны</h3>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -81,20 +85,20 @@
             </a>
           </li>
         </ul>
-        </div>
-      </header>
-        <div class="conrol-form">
-          <div>
+       </header>
+       <!--Форма/Шапка конец-->
+        <section class="conrol-form">
+
         <form
           class="catalog-filter"
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <fieldset class="infrastructure-filter-group">
+          <fieldset class=" filter-group">
             <legend class="filter-title">Инфраструктура</legend>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class="control-input"
                 type="checkbox"
                 name="swimming pool"
               />
@@ -103,7 +107,7 @@
             </label>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class=" control-input"
                 type="checkbox"
                 name="parking space"
               />
@@ -112,7 +116,7 @@
             </label>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class="control-input"
                 type="checkbox"
                 name="Wi-fi"
               />
@@ -120,13 +124,13 @@
               <span class="control-label">Wi-fi</span>
             </label>
             </fieldset>
-          </div>
-          <div>
-          <fieldset class="housing-filter-group">
+
+
+          <fieldset class=" filter-group">
             <legend class="filter-title">Тип жилья</legend>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class="control-input"
                 type="checkbox"
                 name="hotel"
               />
@@ -135,7 +139,7 @@
             </label>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class="control-input"
                 type="checkbox"
                 name="motel"
               />
@@ -144,7 +148,7 @@
             </label>
             <label class="control">
               <input
-                class="visually-hidden control-input"
+                class="control-input"
                 type="checkbox"
                 name="apartments"
               />
@@ -152,16 +156,16 @@
               <span class="control-label">Апартаменты</span>
             </label>
           </fieldset>
-          </div>
-          <div>
+
+
           <fieldset class="catalog-filter-group">
             <legend class="filter-title">Стоимость, ₽:</legend>
-            <button class="range-toggle toggle-min" type="button">
+            <button class=" visually-hidden range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену.</span>
             </button>
-            <button class="range-toggle toggle-max" type="button">
+            <button class=" visually-hidden range-toggle toggle-max" type="button">
               <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
+            </button><br>
             <label class="catalog-filter-label">
               от
               <input
@@ -181,13 +185,13 @@
               ₽
             </label>
           </fieldset>
-
+           <div class="formbut-box">
           <button class="button formbut" type="submit">Применить</button>
-          <button class="button formbut" type="submit">Сбросить</button>
+          <button class="formbut formbut-white" type="submit">Сбросить</button>
+          </div>
         </form>
-      </div>
       </section>
-      </div>
+      </section>
       <section class="">
         <header class="sorting">
           <h2 class="sorting-title">Найдено страниц:38</h2>
@@ -236,7 +240,7 @@
             </li>
           </ul>
         </header>
-      </div>
+
 
         <article class="catalog-product-section">
           <h3 class="visually-hidden">Каталог гостиниц</h3>
@@ -464,5 +468,6 @@
         height="32"
       />
     </footer>
+    </div>
   </body>
 </html>

@@ -372,10 +372,29 @@ text-transform: uppercase;
 
 }
 .formbut {
+  color: #ffffff;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: inherit;
+  border-radius: 4px;
+  border: 0px;
+  padding: 0px;
+  margin-left: 81px;
+  margin-bottom: 20px;
+  width: 160px;
+  height: 48px;
   background-color: #83b3d3;
   font-size: 20px;
   line-height: 26px;
 }
+.formbut-white{
+background-color: #949da300; ;
+}
+
+.control{
+  margin-bottom: 13px;
+}
+
 #appointment-mail{
   border: 0px;
   padding: 0px 22px 0px 22px;
@@ -440,16 +459,34 @@ foot-logo {
   margin-left: 53px;
 
 }
-/*catalog page*/
+/*Страница каталога*/
 
 
 
 
-/*catalog form*/
-.header-title-box{
-    width: 628px;
-    padding-top: 30px;
-    margin-left: 71px;
+/*Каталог/форма/шапка*/
+.inner-header{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: 628px;
+  padding-top: 30px;
+  margin: 0px 0px 45px 71px;
+}
+.catalog-filter {
+
+    margin-top: 45px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.inner-header-title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0px;
 }
 .breadcrumbs{
   width: 146px;
@@ -462,12 +499,13 @@ foot-logo {
   margin:0px;
   margin-right:10px;
 }
-.conrol-form{
-  display:flex;
 
-  padding-bottom: 200px;
-}
+
+
 .catalog-products {
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(4,102px);
+  display: grid;
   text-align: left;
   color: #ffffff;
   background-color: #858585;
@@ -476,12 +514,7 @@ foot-logo {
   background-size: cover;
   background-position: center;
 }
-.inner-header-title {
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 78px;
-  margin: 0px;
-}
+
 .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
@@ -489,6 +522,7 @@ foot-logo {
   line-height: 21px;
 }
 .filter-title {
+  margin-bottom: 34px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -499,15 +533,43 @@ foot-logo {
 }
 
 /*саtalog header*/
+.filter-group {
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 83px 71px;
+    padding: 0px;
+
+}
+.catalog-filter-input {
+    width: 143px;
+    padding: 0px;
+    height: 48px;
+    border: 0px;
+}
+.formbut-box{
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter-group {
+    border:0px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 110px;
+    margin-left: 130px;
+
+}
 .sorting-title {
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
-  text-transform: uppercase;
-}
+  }
 .select-control {
   line-height: 23px;
 }
+.
 
 /*catalog*/
 
