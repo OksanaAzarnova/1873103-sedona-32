@@ -28,7 +28,16 @@ img {
 html {
   height: 100%;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   margin: 0;
   display: flex;
@@ -59,7 +68,7 @@ body {
   text-decoration: none;
   font-family: inherit;
 }
-.visually-hidden {
+.cc {
   visibility: hidden;
   position: absolute;
   clip: rect(0 0 0 0);
@@ -81,7 +90,6 @@ list-style-type: none;
 .link{
   text-decoration: none;
   list-style-type: none;
-
 }
 /*Общее конец*/
 
@@ -139,7 +147,6 @@ list-style-type: none;
 /*Главная страница /главный блок*/
 .form{
   width: 100%;
-
   margin: 0 auto;
   padding: 0px;
 }
@@ -215,7 +222,7 @@ list-style-type: none;
 }
 .rgb12 {
   background-color: rgba(131, 179, 211, 0.12);
-   padding: 0px;
+  padding: 0px;
 }
 
 .rgb120 {
@@ -328,6 +335,10 @@ text-transform: uppercase;
 }
 .form {
 
+  width: 100%;
+  margin: 0 auto;
+  padding: 94px 0px 94px 0px;
+
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
@@ -373,7 +384,8 @@ text-transform: uppercase;
   text-align: center;
 }
 .form-user {
-  margin: 26px auto 94px auto;
+  display: inline-flex;
+  margin: 0px auto 0px auto;
   width: 800px;
 
 }
@@ -401,9 +413,11 @@ background-color: #949da300; ;
 }
 
 #appointment-mail{
+  padding-left: 22px;
+  background: #F2F2F2;
+  border-radius:10px 0px 0px 10px;
   border: 0px;
-  padding: 0px 22px 0px 22px;
-  width: 600px;
+  width: 559px;
   height: 60px;
   font-size: 18px;
   line-height:26px;
@@ -421,6 +435,21 @@ font-size: 20px;
 line-height:26px;
 }
 
+.button-load{
+margin: 1px auto 30px auto;
+width: 625px;
+height: 55px;
+color: #ffffff;
+background-color: #83b3d3;
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+border-radius: 4px;
+}
 /*footer main*/
 
 
@@ -593,9 +622,8 @@ foot-logo {
   gap: 8px;
 }
 .catalog-list{
-
 max-width: 1056px;
-margin: 0 auto 30px auto;
+margin: 0 auto 31px auto;
 grid-template-rows: repeat(4, 181px);
 display: grid;
 padding: 0px;
@@ -641,9 +669,20 @@ border-top: 1px solid #E6E6E6;
   text-transform: uppercase;
 }
 /*catalog button*/
+
+.form-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 72px 89px 72px;
+  width: 1056px;
+}
+.pagination{
+padding: 0px;
+display: flex;
+gap: 8px;
+}
 .button-detailed {
-
-
   margin-right: 8px;
   background: #756257;
   font-size: 16px;
@@ -654,35 +693,57 @@ border-top: 1px solid #E6E6E6;
   font-size: 16px;
   line-height: 21px;
 }
-.more-product {
-  color: #ffffff;
+
+.pagination-item{
+  width: 55px;
+  height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: #83b3d3;
+  border-radius: 4px
+}
+.pagination-link {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.pagination-item {
-  background-color: #83b3d3;
-}
-.pagination-link {
+  color: #ffffff;
   background-color: #83b3d3;
   font-size: 20px;
   line-height: 26px;
 }
 
 /*catalod form*/
+
 .load {
+  padding: 0px;
+  border-radius: 0px 10px 10px 0px;
+  border: 0px;
+  width: 200px;
+  height: 62px;
   background-color: #83b3d3;
   font-size: 20px;
   line-height: 26px;
 }
 
 .show {
+  align-items: center;
+  display: inline-flex;
+  width: 386px;
+  height: 52px;
   line-height: 23px;
 }
+.show-list {
+    margin-left: 51px;
+    width: 160px;
+    height: 52px;
+  }
+  .form-inner{
+    width: 800px;
+    margin: 30px auto 137px auto;
+  }
 .form-title-inner {
+  margin: 0px;
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
@@ -690,6 +751,8 @@ border-top: 1px solid #E6E6E6;
   text-transform: uppercase;
 }
 .form-text-inner {
+  margin: 15px auto 26px auto;
+  width: 500px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -715,8 +778,6 @@ border-top: 1px solid #E6E6E6;
 }
 .search-item {
   margin:73px auto 91px auto;
-
-
   display: flex;
   width: 575px;
   height: 60px;
@@ -728,7 +789,7 @@ border-top: 1px solid #E6E6E6;
   justify-content: center;
 }
 
-}
+
 .form-text {
   font-size: 22px;
   line-height: 26px;
