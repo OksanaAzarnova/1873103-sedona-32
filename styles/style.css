@@ -48,9 +48,10 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #757575;
   color: #000000;
 }
+
 .main {
   flex-grow: 1;
 
@@ -79,6 +80,7 @@ body {
 
 
 .page-container{
+  background-color: white;
   width: 1200px;
   margin: 0 auto;
   padding:0px;
@@ -95,6 +97,7 @@ list-style-type: none;
 
 /*Шапка стили*/
 .page-header{
+
   margin: 0px;
   padding:0px;
 }
@@ -113,6 +116,7 @@ list-style-type: none;
   padding: 0px;
 }
 .logo-pic {
+  margin-bottom:-5px;
   width: 138px;
   align-content: center;
 }
@@ -121,16 +125,69 @@ list-style-type: none;
 	gap: 0;
 }
 .navigation-link {
+  display: block;
+  position: relative;
   color: #000000;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
 }
+.navigation-link:hover{
+  color: #756257;
+}
+.navigation-link:focus{
+  color: #756257;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.navigation-link:active{
+  color: #756257;
+  opacity: 0.3;
+}
+.navigation-link-current::before {
+  position: absolute;
+  right: 0px;
+  bottom: -21px;
+  left: 0px;
+  height: 2px;
+  width: 70px;
+  background-color: #756257;
+  content: "";
+}
+.icon-link:hover{
+
+}
+
+.icon-link {
+  padding: 10px;
+}
+
+
+.icon-item:focus{
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
 .link-header {
   background-color: #756257;
   font-size: 16px;
   line-height: 21px;
+}
+.link-header:hover{
+  background: #615048;
+}
+.link-header:focus{
+  background: #615048;
+  border: 3px solid #83B3D3;
+}
+.link-header:active{
+  background: #615048;
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 .navigation-item{
   text-align: center;
@@ -155,14 +212,22 @@ list-style-type: none;
   padding: 0px;
 }
 .main {
+  position: relative;
   background-color: #4b4b4b;
   background-image: url("../img/jpg/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-
   }
+.main ::before{
+  display: block;
+  position: absolute;
+  content:"";
+  background-image: url('../img/other/vector.svg');
+  bottom: 0px;
+  width: 1200px;
+  height: 57px;
+}
 .content-box{
   text-align: center;
   padding-top: 51px;
@@ -276,6 +341,7 @@ flex: 1 0 33%;
 }
 
 .catalog-header {
+  position: relative;
   max-width: 240px;
   font-weight: bold;
   font-size: 24px;
@@ -300,9 +366,84 @@ flex: 1 0 33%;
   color: #ffffff;
 }
 .catalog-title{
+  position: relative;
   margin-bottom:76px;
 }
-
+.catalog-title::after {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: -15px;
+  top: 75px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  content: "-№1-";
+}
+.title-two::after {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: -15px;
+  top: 75px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  content: "-№2-";
+}
+.title-three::after {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: -1px;
+  top: 85px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  content: "-№3-";
+}
+.title-four::after {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: -1px;
+  top: 85px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  content: "-№4-";
+}
+.title-five::after {
+  position: absolute;
+  width: 250px;
+  height: 25px;
+  left: -1px;
+  top: 85px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  content: "-№5-";
+}
 .catalog-title-white{
   color:#ffffff;
 font-weight: bold;
@@ -349,6 +490,7 @@ text-transform: uppercase;
   background-position: center;
 }
 .search {
+  background-color: white;
   align-content: center;
   padding: 91px;
   padding-right: 240px ;
@@ -414,6 +556,7 @@ background-color: #949da300; ;
 
 #appointment-mail{
   padding-left: 22px;
+  padding-right: 20px;
   background: #F2F2F2;
   border-radius:10px 0px 0px 10px;
   border: 0px;
@@ -422,6 +565,18 @@ background-color: #949da300; ;
   font-size: 18px;
   line-height:26px;
 
+}
+#appointment-mail :hover{
+background: #E6E6E6;
+}
+.appointment:focus{
+background: #E6E6E6;
+border: 3px solid #83B3D3;
+}
+#appointment-mail :active{
+background: #FFFFFF;
+border: 2px solid #000000;
+box-sizing: border-box;
 }
 .button-form{
   background-color: #83B3D3;
@@ -453,7 +608,9 @@ border-radius: 4px;
 /*footer main*/
 
 
-
+.main-foot{
+background-color: white;
+}
 
 .foot-conteiner {
   display: flex;
@@ -473,9 +630,7 @@ gap: 29px;
 align-items: center;
 margin: 0px;
 }
-link-item{
 
-}
 
 .tell {
   width: 720px;
@@ -716,6 +871,7 @@ gap: 8px;
 /*catalod form*/
 
 .load {
+
   padding: 0px;
   border-radius: 0px 10px 10px 0px;
   border: 0px;
@@ -725,7 +881,9 @@ gap: 8px;
   font-size: 20px;
   line-height: 26px;
 }
-
+.load :hover{
+  background: #68A2CA;
+}
 .show {
   align-items: center;
   display: inline-flex;
@@ -788,8 +946,17 @@ gap: 8px;
   align-items: center;
   justify-content: center;
 }
-
-
+.search-item :hover{
+  background: #615048;
+}
+.search-item:focus{
+  background: #615048;
+  border: 3px solid #83B3D3;
+}
+.search-item:active{
+  color: #756257;
+  opacity: 0.3;
+}
 .form-text {
   font-size: 22px;
   line-height: 26px;
