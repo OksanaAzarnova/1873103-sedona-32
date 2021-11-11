@@ -40,10 +40,14 @@ html {
   overflow: hidden;
 }
 body {
+
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1280px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-family: "PT sans";
   font-size: 18px;
   font-weight: normal;
@@ -93,34 +97,49 @@ body {
 
 /*Шапка стили*/
 .page-header {
+  justify-content: center;
+  display: flex;
   margin: 0px;
   padding: 0px;
+  max-height: 65px;
 }
 .navigation {
   display: flex;
+  min-width: 1057px;
   justify-content: space-between;
   align-content: center;
-  padding: 0 72px;
+  align-items: center;
+
 }
 .navigation-list {
   gap: 33px;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   width: 412px;
   margin: 0px;
   padding: 0px;
+
 }
 .logo-pic {
-  margin-bottom: -3.5px;
+  margin-bottom: -8.5px;
   width: 138px;
   align-content: center;
+  z-index: 2;
+  margin-right: 162px;
 }
 .navigation-user {
+  display: flex;
+  max-width:250px;
+  max-height:37px;
   justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
   gap: 0;
+  align-content: flex-end;
 }
 .navigation-link {
-  padding: 5px;
+  padding: 0px;
   display: grid;
   place-items: center;
   position: relative;
@@ -129,6 +148,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
+
 }
 .navigation-link:hover {
   color: #756257;
@@ -146,7 +166,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 0px;
-  bottom: -18px;
+  bottom: -22px;
   left: 0px;
   height: 2px;
   width: 100%;
@@ -205,8 +225,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0px;
-  top:0px;
+  right: -3px;
+  top:2px;
   width:19px ;
   height:19px ;
   display: flex;
@@ -217,11 +237,9 @@ body {
   line-height: 13px;
 }
 .button-link {
-  margin-left: 33px;
+  margin-left: 24px;
 }
-.icon-item {
-    margin-left: 21px;
-}
+
 .like{
   position: relative;
 }
@@ -412,11 +430,11 @@ border:none;
 .content-box {
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 81px;
 }
 .text-box-main {
   max-width: 720px;
-  margin: 63px auto 79px;
+  margin: 62px auto 79px;
 }
 .header-text {
   font-weight: bold;
@@ -426,11 +444,13 @@ border:none;
   text-transform: uppercase;
   padding: 0px;
   margin: 0px;
+  margin-bottom: 32px;
 }
 .text-main {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  width: 720px;
 }
 
 /*Главная страница/каталог*/
@@ -447,16 +467,18 @@ border:none;
 }
 
 .advantage-content {
-  flex-direction: row-reverse;
   height: 385px;
   display: flex;
   background-color: #83b3d3;
 }
+.advantage-reverse{
+flex-direction: row-reverse;
+}
 .container-text {
   width: 400px;
-  margin-left: 90px;
-  margin-right: 90px;
-  padding-top: 98px;
+  margin-left: 91px;
+  margin-right: 91px;
+  padding-top: 96px;
 }
 
 .discribe-advantage {
@@ -543,23 +565,24 @@ border:none;
 }
 
 .catalog-title {
-font-weight: bold;
+  position: relative;
+  font-weight: bold;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  width: 400;
+  max-width: 400px;
   margin: 0;
+  margin-bottom: 81px;
 }
 .catalog-text-white {
+  padding-right: 0px;
+  padding-top: 0px;
   text-align: center;
   color: #ffffff;
 }
-.catalog-title {
-  position: relative;
-  margin-bottom: 76px;
-}
+
 .catalog-title::after {
   position: absolute;
   width: 250px;
@@ -574,6 +597,10 @@ font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   content: "-№1-";
+}
+.title-two{
+  padding-left: 23px;
+  padding-right: 23px;
 }
 .title-two::after {
   position: absolute;
@@ -1998,5 +2025,7 @@ line-height: 40px;
   background: #68A2CA;
   color:rgba(255, 255, 255, 0.3);
   border:none;
-
 }
+
+
+
