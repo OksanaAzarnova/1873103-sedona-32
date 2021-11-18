@@ -55,7 +55,7 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 21px;
-  background-color: #757575;
+  background-color: #F2F2F2;
   color: #000000;
 }
 
@@ -85,6 +85,7 @@ body {
 }
 
 .page-container {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   background-color: white;
   width: 1200px;
   margin: 0 auto;
@@ -103,14 +104,14 @@ body {
   display: flex;
   margin: 0px;
   padding: 0px;
-  max-height: 65px;
+  height: auto;
+  min-height: 65px;
 }
 .navigation {
   display: flex;
   min-width: 1057px;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  align-items: flex-start;
 
 }
 .navigation-list {
@@ -119,26 +120,28 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 412px;
+  height: 100%;
   margin: 0px;
   padding: 0px;
-
+  padding-bottom: 2px;
 }
 .logo-pic {
-  margin-bottom: -8.5px;
   width: 138px;
+  height: 65px;
   align-content: center;
   z-index: 2;
-  margin-right: 162px;
+
 }
 .navigation-user {
   display: flex;
-  max-width:250px;
-  max-height:37px;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  padding-top: 13px;
+  min-width:250px;
+  height:100%;
   gap: 0;
-  align-content: flex-end;
 }
 .navigation-link {
   padding: 0px;
@@ -202,6 +205,9 @@ body {
 }
 
 .link-header {
+  display: flex;
+  height: auto;
+  min-height: 37px;
   background-color: #756257;
   font-size: 16px;
   line-height: 21px;
@@ -435,12 +441,12 @@ border:none;
 }
 .content-box {
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 81px;
+  padding-top: 50px;
+  padding-bottom: 79px;
 }
 .text-box-main {
   max-width: 720px;
-  margin: 62px auto 79px;
+  margin: 61px auto 79px;
 }
 .header-text {
   font-weight: bold;
@@ -450,7 +456,7 @@ border:none;
   text-transform: uppercase;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .text-main {
   font-size: 22px;
@@ -473,7 +479,7 @@ border:none;
 }
 
 .advantage-content {
-  height: 385px;
+  min-height: 385px;
   display: flex;
   background-color: #83b3d3;
 }
@@ -484,7 +490,7 @@ flex-direction: row-reverse;
   width: 400px;
   margin-left: 91px;
   margin-right: 91px;
-  padding-top: 96px;
+  padding-top: 98px;
 }
 
 .discribe-advantage {
@@ -517,7 +523,7 @@ flex-direction: row-reverse;
 }
 
 .catalog-text {
-  height: 73px;
+  min-height: 73px;
   width: 250px;
   margin:0px;
   max-width: 250px;
@@ -528,7 +534,7 @@ flex-direction: row-reverse;
 
 .pic-box {
   text-align: center;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 .text-box {
   padding-left: 75px;
@@ -569,7 +575,7 @@ flex-direction: row-reverse;
 
 }
 .avter-header{
-  margin-bottom: 76px;
+  margin-bottom: 79px;
 }
 
 .catalog-title {
@@ -596,15 +602,15 @@ flex-direction: row-reverse;
   width: 250px;
   height: 25px;
   left: -15px;
-  top: 84px;
-  font-family: PT Sans;
+  top:calc(100% + 29px);
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  content: "-№1-";
+  content: "— №1 —";
 }
 .title-two{
   padding-left: 23px;
@@ -615,7 +621,7 @@ flex-direction: row-reverse;
   width: 250px;
   height: 25px;
   left: -17px;
-  top: 86px;
+  top:calc(100% + 24px);
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -623,14 +629,14 @@ flex-direction: row-reverse;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  content: "-№2-";
+  content: "— №2 —";
 }
 .title-three::after {
   position: absolute;
   width: 250px;
   height: 25px;
   left: -1px;
-  top: 84px;
+  top: calc(100% + 28px);
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -638,14 +644,14 @@ flex-direction: row-reverse;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  content: "-№3-";
+  content: "— №3 —";
 }
 .title-four::after {
   position: absolute;
   width: 250px;
   height: 25px;
   left: -1px;
-  top: 84px;
+  top: calc(100% + 28px);
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -653,14 +659,14 @@ flex-direction: row-reverse;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  content: "-№4-";
+  content: "— №4 —";
 }
 .title-five::after {
   position: absolute;
   width: 250px;
   height: 25px;
   left: -1px;
-  top: 84px;
+  top: calc(100% + 28px);
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
@@ -668,7 +674,7 @@ flex-direction: row-reverse;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  content: "-№5-";
+  content: "— №5 —";
 }
 .catalog-title-white {
   color: #ffffff;
@@ -694,17 +700,18 @@ flex-direction: row-reverse;
 .form {
   width: 100%;
   margin: 0 auto;
-  padding: 97px 0px 94px 0px;
+  padding: 92px 0px 94px 0px;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #e5e5e5;
   color: #ffffff;
   background-image: url("../img/jpg/backgroundform.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+  }
 .search {
   background-color: white;
   align-content: center;
@@ -720,7 +727,7 @@ flex-direction: row-reverse;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0pt;
+  padding: 0px;
 }
 .form-title {
   padding: 94px 240px 15px 240px;
@@ -741,10 +748,11 @@ flex-direction: row-reverse;
 }
 .form-user {
   display: inline-flex;
-  margin: 20px auto 0px auto;
+  margin: 23px auto 0px auto;
   width: 800px;
   font-size: 18px;
   line-height: 26px;
+  align-items: center;
 }
 .formbut {
   color: #ffffff;
@@ -876,29 +884,31 @@ flex-direction: row-reverse;
 
 .foot-conteiner {
   display: flex;
-  max-width: 1200px;
+  align-items: flex-start;
+  justify-content: space-between;
   min-height: 120px;
   margin: 0 auto;
-  padding-left: 72px;
+  padding-left: 63px;
   padding-right: 50px;
   padding-bottom: 31px;
-  padding-top: 42px;
-  justify-content: space-between;
+  padding-top: 36px;
+
 }
 .foot-list {
   display: flex;
   padding: 0px;
   justify-content: center;
   margin: 0px;
-  margin-right: 123px;
-  flex-wrap: wrap;
+  margin-right: 125px;
+  flex-wrap: nowrap;
 }
 
 .tell {
   display: grid;
-  place-items: center;
+  align-items: center;
+  margin-top: -5px;
   width: 361px;
-  height: 70px;
+  min-height: 50px;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -913,15 +923,16 @@ flex-direction: row-reverse;
 }
 .tell:focus {
   color: #756257;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 .tell:active {
   color: rgba(117, 98, 87, 0.3);
-  border: none;
+  outline: none;
 }
 
 .footer-logo {
+  margin-top: -14px;
   display: grid;
   place-items: center;
   width: 160px;
@@ -948,8 +959,8 @@ flex-direction: row-reverse;
 .link-footer-icon {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   color: #83B3D3;
 }
 .footer-icon {
@@ -1610,7 +1621,8 @@ background: #68A2CA;
   border-radius: 0px 10px 10px 0px;
   border: 0px;
   width: 200px;
-  height: 60px;
+  height: auto;
+  min-height: 60px;
   background-color: #83b3d3;
   font-size: 20px;
   line-height: 26px;
@@ -1669,6 +1681,7 @@ color:rgba(51, 51, 51, 0.3)
 
 }
 .form-title-inner {
+  width: 800px;
   margin: 0px;
   font-weight: bold;
   font-size: 30px;
@@ -1677,7 +1690,7 @@ color:rgba(51, 51, 51, 0.3)
   text-transform: uppercase;
 }
 .form-text-inner {
-  margin: 27px auto 26px auto;
+  margin: 29px auto 26px auto;
   width: 500px;
   font-size: 22px;
   line-height: 26px;
@@ -1703,16 +1716,17 @@ color:rgba(51, 51, 51, 0.3)
   line-height: 28px;
 }
 .search-item {
-  margin: 57px auto 0px 75px;
+  margin: 59px auto 0px 74px;
   display: flex;
   width: 575px;
-  height: 60px;
+  height: auto;
+  min-height: 60px;
   background-color: #756257;
   border-radius: 10px;
   font-size: 20px;
   line-height: 36px;
-  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .search-item:hover {
   background: #615048;
