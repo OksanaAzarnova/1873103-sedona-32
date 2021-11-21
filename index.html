@@ -366,7 +366,7 @@
             <div class="date">
               <label class="modal-form form-date" for="auth-date-start">Дата заезда:</label>
               <input class="auth-form-field modal-field error right" type="text" id="auth-date-start"
-              name="auth-password"  value="27 апреля 2020">
+              name="date-start"  value="27 апреля 2020">
               <button class="field-group-buttton" type="button" >
               <svg width="15" height="15" viewBox="0 0 15 15"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +391,7 @@
             <div class="date">
               <label class="modal-form  form-date" for="auth-date-end">Дата выезда:</label>
               <input class="auth-form-field modal-field error right" type="text" id="auth-date-end"
-              name="auth-password"  value="1 сентября 2021">
+              name="data-end"  value="1 сентября 2021">
               <button class="field-group-buttton" type="button" >
               <svg width="15" height="15" viewBox="0 0 15 15"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -413,8 +413,8 @@
               </button>
         </div>
         <p class="date-form-right">На эти даты есть свободные номера. Пока есть.</p>
-              <div class="number-form">
-                <div>
+              <div class="number-form-box">
+                <div class="number-form">
               <button class="button-more-less more" type="button">
                 <svg width="13" height="13"
                   viewBox="0 0 13 13" fill="none"
@@ -429,9 +429,9 @@
                   </svg></button>
               <label class="modal-form count-adults" for="adults">Взрослые:</label>
               <input class="number-form-field modal-field" type="number" id="adults"
-              name="adults" >
+              name="adults" value="2">
               </div>
-              <div>
+              <div class="number-form">
               <button class="button-more-less more" type="button"> <svg width="13" height="13"
                   viewBox="0 0 13 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg"><path
@@ -446,22 +446,19 @@
               </button>
               <label class="modal-form count-children" for="children">Дети:
                 <span class="modal-info ::before">i</span>
-
                 <span class="modal-info-text">Укажите количество детей, которые будут с вами,
                                               возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
                                               бесплатно.
                 </span>
               </label>
               <input class="number-form-field modal-field" type="number" id="children"
-              name="children" >
+              name="children" value="1" >
             </div>
               </div>
           <button class="modal-button" type="submit">Найти</button>
           </form>
         </section>
-
       </div>
-
     </div>
   </body>
 </html>
