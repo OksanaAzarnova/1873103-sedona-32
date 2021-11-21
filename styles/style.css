@@ -272,7 +272,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  top:52px;
+  top:50px;
   left: -178px;
   z-index: 1;
   box-sizing: border-box;
@@ -434,7 +434,7 @@ border:none;
   height: 9px;
   background-image:url('../img/other/vectoropap.svg');
   top: -9px;
-  left: 189px;
+  left: 187px;
   content: "";
 }
 
@@ -1795,7 +1795,7 @@ color:rgba(51, 51, 51, 0.3)
 
 .modal-container {
   z-index: 2;
-  display: none;
+  display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
