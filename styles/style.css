@@ -85,6 +85,9 @@ body {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   width: 1200px;
@@ -983,7 +986,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   min-height: 120px;
-  margin: 0 auto;
+  margin: auto;
   padding-left: 63px;
   padding-right: 50px;
   padding-bottom: 31px;
@@ -1247,10 +1250,10 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 18%;
-  left: 20%;
-  width: 12px;
-  height: 12px;
+  top: 24%;
+  left: 24%;
+  width: 10px;
+  height: 10px;
   background-color: rgba(63, 94, 114, 1);
   border-radius: 50%;
   content: "";
@@ -2081,6 +2084,15 @@ body {
   width: 420px;
   height: 50px;
   padding: 1px 16px 2px 18px;
+}
+
+input::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .more-less {
