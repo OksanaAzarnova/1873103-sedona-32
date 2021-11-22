@@ -925,6 +925,10 @@ body {
 .field:active {
   background: #ffffff;
   border: 2px solid #000000;
+  padding-left: 22px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .error {
@@ -1312,7 +1316,7 @@ body {
 }
 
 .catalog-filter-label {
-  width: 144px;
+  min-width: 144px;
   height: 48px;
   display: flex;
   align-items: center;
@@ -1323,58 +1327,67 @@ body {
 }
 
 .catalog-filter-label:first-child {
+  border-width: 2px 0 2px 2px;
   border-radius: 4px 0 0 4px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 1);
 }
 
-.catalog-filter-label:first-child:hover .catalog-filter-label:last-child {
+/*.catalog-filter-label:first-child:hover .catalog-filter-label:last-child {
   border-color: rgba(255, 255, 255, 0.6);
   border-left-color: rgba(255, 255, 255, 0.6);
-}
+}*/
 
 .catalog-filter-label:last-child {
   border-radius: 0 4px 4px 0;
-  border-left-color: rgba(255, 255, 255, 0.1);
-  margin-left: -2px;
+  border-width: 2px 2px 2px 2px;
+  border-left-color: rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .min-price:hover {
+  border-width: 2px 2px 2px 2px;
   opacity: 0.6;
+  padding-left: 19px;
+  padding-right: 12px;
 }
 
 .min-price:hover + .max-price {
-  border-left: none;
-  margin-left: 0;
+  border-width: 2px 2px 2px 0;
+  padding-left: 21px;
 }
 
-.min-price:focus {
+.min-price:focus-within {
+  border-width: 2px 0 2px 2px;
   box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-  z-index: 2;
+  opacity: 1;
 }
 
-.min-price:focus + .max-price {
-  z-index: 1;
+.min-price:focus-within + .max-price {
+  z-index: 2;
+  border-width: 2px;
+  padding-left: 19px;
 }
 
 .min-price:active {
   background: #756257;
-  border: 2px solid #ffffff;
+  border-width: 2px 0 2px 2px;
   opacity: 1;
+  box-shadow: none;
+  padding-left: 19px;
 }
 
 .min-price:active + .max-price {
-  border-left: none;
-  margin-left: 0;
+  border-width: 2px 2px 2px 2px;
+  padding-left: 19px;
 }
 
 .max-price:hover {
+  border-width: 2px 2px 2px 2px;
   opacity: 0.6;
-  border: 2px solid #ffffff;
-  margin-left: 0;
+  padding-left: 21px;
 }
 
-.max-price:focus {
+.max-price:focus-within {
   box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
   opacity: 1;
 }
@@ -1382,8 +1395,8 @@ body {
 .max-price:active {
   opacity: 1;
   border: 2px solid #ffffff;
-  margin-left: -2px;
   background: #756257;
+  box-shadow: none;
 }
 
 .catalog-filter-input {
