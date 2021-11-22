@@ -1384,7 +1384,7 @@ body {
 .max-price:hover {
   border-width: 2px 2px 2px 2px;
   opacity: 0.6;
-  padding-left: 21px;
+  padding-left: 19px;
 }
 
 .max-price:focus-within {
