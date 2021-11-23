@@ -916,6 +916,14 @@ body {
   font-weight: normal;
 }
 
+.field::placeholder {
+  color: rgba(0, 0, 0, 1);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .field:hover {
   background: #e6e6e6;
 }
@@ -988,14 +996,14 @@ body {
 
 .foot-conteiner {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   min-height: 120px;
-  margin: auto 0;
+  margin: 0;
   padding-left: 61px;
   padding-right: 50px;
-  padding-bottom: 31px;
-  padding-top: 37px;
+  padding-bottom: 39px;
+  padding-top: 26px;
 }
 
 .foot-list {
