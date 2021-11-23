@@ -938,6 +938,10 @@ body {
   border: 2px solid #ff5757;
 }
 
+.field:disabled {
+  opacity: 0.6;
+}
+
 .button-form {
   background-color: #83b3d3;
   padding: 0;
@@ -1135,8 +1139,8 @@ body {
   background-image: url("../img/other/vector-breadcrumbs.svg");
   width: 5px;
   height: 8px;
-  left: 48px;
-  bottom: 12px;
+  left: 39px;
+  bottom: 10px;
   opacity: 30%;
 }
 
@@ -1146,6 +1150,11 @@ body {
   border-radius: 4px;
   position: relative;
   margin: 0;
+}
+
+.maine-page {
+  margin-left: -10px;
+  margin-top: 2px;
 }
 
 .breadcrumbs-item:hover {
@@ -1412,6 +1421,11 @@ body {
   appearance: textfield;
 }
 
+.catalog-filter-input:disabled {
+  opacity: 0.6;
+}
+
+
 :focus-visible {
   outline: none;
   outline-style: none;
@@ -1448,14 +1462,18 @@ body {
 }
 
 .sorting-title {
-  display: grid;
+  display: flex;
   place-content: center;
-  margin: 0 152px 0 0;
+  margin: 25px 152px 0 0;
   max-width: 337px;
   font-weight: bold;
   font-size: 30px;
   line-height: 39px;
   text-transform: uppercase;
+}
+
+.search-rezults {
+  padding-left: 6px;
 }
 
 .button-light {
@@ -1561,9 +1579,11 @@ body {
 .catalog-item-button {
   border-top: 1px solid #e6e6e6;
   padding-top: 31px;
+  min-width: 1056px;
   min-height: 116px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .rating-product {
@@ -1651,7 +1671,9 @@ body {
 .pagination {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: 370px;
 }
 
 .button-selected {
@@ -2086,6 +2108,10 @@ body {
   padding: 1px 16px 2px 18px;
 }
 
+.auth-form-field:disabled {
+  opacity: 0.6;
+}
+
 input::placeholder {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -2149,6 +2175,10 @@ input::placeholder {
   padding: 0 61px;
   width: 133px;
   height: 50px;
+}
+
+.number-form-field :disabled {
+  opacity: 0.6;
 }
 
 .date {
