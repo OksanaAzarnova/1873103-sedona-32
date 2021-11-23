@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Седона.Каталог</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="../img/png/favicon.png" type="image/png" />
+    <link
+      rel="icon"
+      href="img/png/favicon.png"
+      type="image/png"
+      sizes="32x32"
+    />
   </head>
   <body class="inner">
     <div class="page-container">
@@ -101,7 +106,7 @@
                           <p class="popover-discribtion">Мотель</p>
                         </div>
                       </a>
-                      <button class="delete">
+                      <button class="delete" type="button">
                         <svg
                           class="delete-svg"
                           aria-hidden="true"
@@ -143,7 +148,7 @@
                           <p class="popover-discribtion">Апартаменты</p>
                         </div>
                       </a>
-                      <button class="delete">
+                      <button class="delete" type="button">
                         <svg
                           class="delete-svg"
                           width="16"
@@ -183,7 +188,7 @@
         <h2 class="visually-hidden">Список гостиниц Седоны</h2>
         <section class="catalog-products">
           <header class="inner-header">
-            <h3 class="inner-header-title">Гостиницы Седоны</h3>
+            <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
@@ -203,7 +208,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="breadcrumbs-item maine-page">
+              <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Гостиницы </a>
               </li>
             </ul>
@@ -214,7 +219,7 @@
             method="get"
           >
             <fieldset class="filter-group">
-              <legend class="filter-title">Инфраструктура</legend>
+              <legend class="filter-title">Инфраструктура:</legend>
               <label class="control">
                 <input
                   class="control-input"
@@ -240,7 +245,7 @@
               </label>
             </fieldset>
             <fieldset class="filter-group">
-              <legend class="filter-title">Тип жилья</legend>
+              <legend class="filter-title">Тип жилья:</legend>
               <label class="control">
                 <input
                   class="control-input"
@@ -296,9 +301,7 @@
               </div>
               <div class="range">
                 <div class="range-scale">
-                  <div  class="range-bar"
-                        style= "left: 0;
-                                width: 227px;">
+                  <div class="range-bar" style="left: 0; width: 227px">
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden"
                         >Изменить минимальную цену.</span
@@ -323,11 +326,13 @@
         </section>
         <section class="sortin-block">
           <header class="sorting">
-            <h2 class="sorting-title">Найдено гостиниц: <span class="search-rezults">38</span></h2>
+            <h2 class="sorting-title">
+              Найдено гостиниц: <span class="search-rezults">38</span>
+            </h2>
             <form class="sorting-type">
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешовое</option>
+                <option value="cheap">Сначала дешевые</option>
                 <option value="popular">Сначала популярное</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
@@ -395,7 +400,9 @@
                     Гостиница <span>Oт 4000 ₽</span>
                   </p>
                   <a href="#" class="button button-detailed">Подробнее</a>
-                  <button class="button button-favourites">В избранное</button>
+                  <button class="button button-favourites" type="button">
+                    В избранное
+                  </button>
                 </div>
                 <div class="rating-product">
                   <img
@@ -426,7 +433,9 @@
                     Мотель <span>От 3000 ₽</span>
                   </p>
                   <a href="#" class="button button-detailed">Подробнее</a>
-                  <button class="button button-favourites">в избранное</button>
+                  <button class="button button-favourites" type="button">
+                    в избранное
+                  </button>
                 </div>
                 <div class="rating-product">
                   <img
@@ -457,7 +466,9 @@
                     Апартаменты <span>Oт 2000 ₽</span>
                   </p>
                   <a href="#" class="button button-detailed">Подробнее</a>
-                  <button class="button button-selected">в избранном</button>
+                  <button class="button button-selected" type="button">
+                    в избранном
+                  </button>
                 </div>
                 <div class="rating-product">
                   <img
@@ -488,7 +499,9 @@
                     Гостиница <span>от 3000 ₽</span>
                   </p>
                   <a href="#" class="button button-detailed">Подробнее</a>
-                  <button class="button button-favourites">в избранное</button>
+                  <button class="button button-favourites" type="button">
+                    в избранное
+                  </button>
                 </div>
                 <div class="rating-product">
                   <img
@@ -501,10 +514,10 @@
                   <p class="rating-form button">Рейтинг: 9,2</p>
                 </div>
               </li>
-              <section class="catalog-item-button">
-                <a href="#" class="button-load link-list">Загрузить еще</a>
-              </section>
             </ul>
+            <p class="catalog-item-button">
+              <button class="button-load" type="button">Загрузить еще</button>
+            </p>
           </article>
           <footer class="form-footer">
             <ul class="pagination link">
@@ -548,7 +561,7 @@
           </footer>
         </section>
         <section class="form-inner">
-          <h3 class="form-title-inner">Подпишитесь на рассылку</h3>
+          <h2>class="form-title-inner">Подпишитесь на рассылку</h2>
           <p class="form-text-inner">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
@@ -557,9 +570,8 @@
             action="https://echo.htmlacademy.ru/"
             method="POST"
           >
-            <label for="appointment-mail"></label>
-            <!--Класс .error для ошибки-->
             <input
+              required
               class="field"
               type="email"
               name="appointment-mail"
@@ -711,7 +723,7 @@
     </div>
     <div class="modal-container" hidden>
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg
             width="13"
             height="13"
@@ -740,10 +752,12 @@
                 >Дата заезда:</label
               >
               <input
+                required
                 class="auth-form-field modal-field error right"
                 type="text"
                 id="auth-date-start"
                 name="date-start"
+                placeholder="Укажите дату"
                 value="27 апреля 2020"
               />
               <button class="field-group-buttton" type="button">
@@ -779,17 +793,23 @@
                   />
                 </svg>
               </button>
+              <span class="date-form-error"
+                >Мы не можем отправить вас в прошлое.</span
+              >
             </div>
-            <p class="date-form-error">Мы не можем отправить вас в прошлое.</p>
             <div class="date">
-              <label class="modal-form form-date" for="auth-date-end"
+              <label
+                class="modal-form form-date form-date-start"
+                for="auth-date-end"
                 >Дата выезда:</label
               >
               <input
+                required
                 class="auth-form-field modal-field error right"
                 type="text"
                 id="auth-date-end"
                 name="data-end"
+                placeholder="Укажите дату"
                 value="1 сентября 2021"
               />
               <button class="field-group-buttton" type="button">
@@ -825,10 +845,10 @@
                   />
                 </svg>
               </button>
+              <span class="date-form-right">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
             </div>
-            <p class="date-form-right">
-              На эти даты есть свободные номера. Пока есть.
-            </p>
             <div class="number-form-box">
               <div class="number-form">
                 <button class="button-more-less more" type="button">
@@ -857,6 +877,7 @@
                   >Взрослые:</label
                 >
                 <input
+                  required
                   class="number-form-field modal-field"
                   type="text"
                   id="adults"
@@ -896,6 +917,7 @@
                   </span>
                 </label>
                 <input
+                  required
                   class="number-form-field modal-field"
                   type="text"
                   id="children"
