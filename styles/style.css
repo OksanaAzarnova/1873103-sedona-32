@@ -1109,7 +1109,7 @@ body {
   grid-row-end: 1;
   width: 628px;
   padding-top: 30px;
-  margin: 0 0 45px 71px;
+  margin: 0 0 42px 71px;
 }
 
 .catalog-filter {
@@ -1198,7 +1198,7 @@ body {
 }
 
 .filter-title {
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   padding: 0;
   font-weight: bold;
   font-size: 20px;
